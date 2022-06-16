@@ -238,7 +238,7 @@ const form = document.querySelector('#form');
 const EMAIL_INVALID = 'Please enter a correct email address format and uppercase is not allowed!!';
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
+
   const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
   if (emailValid) {
     form.submit();
